@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import GifList from './components/GifList';
 import SearchBar from './components/searchBar';
 import request from 'superagent';
+import './styles/app.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class>
+      <div>
         <SearchBar onTermChange={this.handleTermChange} />
         <GifList gifs={this.state.gifs} />
       </div>
